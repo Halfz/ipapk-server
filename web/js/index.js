@@ -32,7 +32,7 @@ function loadApps(){
 						'<div class="info_box">'+
 							'<span class="app_name">'+val.name+
 							'</span><span class="version_number">'+val.version+'  ('+val.build+')</span><br>'+
-							'<span>Uploaded:</span>'+
+							'<span>Updated:</span>'+
 							'<span class="update_time">'+val.uploadTime+'</span>'+
 							'<br><span class="changelog">'+(val.changelog ? val.changelog : "")+'</span>'+
 						'</div>'+
@@ -75,7 +75,7 @@ function loadMoreVersion(el) {
 				var versionLists =
 				'<li data="'+val.url+'" >'+
 					'<img src="'+val.icon+'" alt="">'+
-					'<p><span class="app_name">'+val.name+'</span><span class="version_number">'+val.version+'  '+val.build+'</span></p><p><span>更新：</span><span class="update_time">'+val.uploadTime+'</span></p><p><span class="changelog">'+(val.changelog ? val.changelog : "")+'</span></p>'+
+					'<p><span class="app_name">'+val.name+'</span><span class="version_number">'+val.version+'  '+val.build+'</span></p><p><span>Updated：</span><span class="update_time">'+val.uploadTime+'</span></p><p><span class="changelog">'+(val.changelog ? val.changelog : "")+'</span></p>'+
 				'</li>';
 				thisVersionInfo.append(versionLists);
 			});
@@ -83,7 +83,7 @@ function loadMoreVersion(el) {
 			if (version.length > 0) {
 				var moreButton =
 				'<li id="moreButton">'+
-					'<span>加载更多</span>'+
+					'<span>More</span>'+
 				'</li>';
 				thisVersionInfo.append(moreButton);
 			}
